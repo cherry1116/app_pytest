@@ -1,0 +1,55 @@
+[1m[31mERROR   [0m root:basepage.py:62 查找元素失败！
+Traceback (most recent call last):
+  File "F:\work\eclipse-workspace\APP_Framework_Huohuo\Common\basepage.py", line 60, in get_element
+    return self.driver.find_element(*locator)
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\webdriver.py", line 284, in find_element
+    'value': value})['value']
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: 
+
+[1m[31mERROR   [0m root:basepage.py:211 截图失败
+Traceback (most recent call last):
+  File "F:\work\eclipse-workspace\APP_Framework_Huohuo\Common\basepage.py", line 60, in get_element
+    return self.driver.find_element(*locator)
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\webdriver.py", line 284, in find_element
+    'value': value})['value']
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\work\eclipse-workspace\APP_Framework_Huohuo\Common\basepage.py", line 208, in save_screenshot
+    self.driver.save_screenshot(filePath)
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "f:\work\python\python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "f:\work\python\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message:

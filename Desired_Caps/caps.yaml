@@ -1,0 +1,7 @@
+platformVersion: 6.0
+platformName: Android
+deviceName: emulator-5554
+appPackage: com.gossip.ziv.gossip
+appActivity: .home.splash.SplashActivity
+noReset: True
+automationName: Appium
